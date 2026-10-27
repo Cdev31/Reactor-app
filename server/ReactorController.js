@@ -5,7 +5,7 @@ const ReactorService = require("./ReactorService");
 const adjust = (req, res) => {
 
     //Obtener la temperatura ingresada
-    const temperatura = Number(req.body?.temperature);
+    const temperatura = Number(req.body?.temperatura);
 
     //Validar que la temperatura sea correcta
     if(!Number.isInteger(temperatura) || temperatura < ReactorService.MIN_TEMP || temperatura > ReactorService.MAX_TEMP){

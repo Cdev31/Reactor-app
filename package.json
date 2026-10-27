@@ -12,5 +12,8 @@
         "dev:client": "npm run dev --workspaces=client",
         "dev:server": "npm run dev --workspaces=server",
         "dev": "npm run dev:server & npm run dev:client"
+    },
+    "dependencies": {
+        "express": "^5.3.0"
     }
 }
